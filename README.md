@@ -98,6 +98,9 @@ Where:
 
 **Intuition of Entropy:**
 
+[Information Source]![image](https://github.com/user-attachments/assets/ecfe52b2-138f-45e4-927a-ce11d258a15a)
+
+
 * **Maximum Entropy (High Impurity):** When the classes in a subset are equally distributed, the entropy is at its maximum (e.g., a 50/50 split in a binary classification problem yields an entropy of 1 bit). This signifies the highest level of uncertainty.
 * **Minimum Entropy (High Purity):** When a subset contains only one class (it's pure), the entropy is zero. There is no uncertainty in predicting the class of an instance in this subset.
 * **Goal of Splitting:** Decision tree algorithms strive to reduce entropy at each split, aiming to create child nodes that are purer than the parent node.
