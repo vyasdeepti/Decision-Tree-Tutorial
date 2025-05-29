@@ -95,25 +95,6 @@ The recursion stops when one or more conditions are met:
 After the tree is built, pruning reduces its size by removing nodes that do not provide power in classifying instances to avoid overfitting.
 
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Worked Example with Calculations
 
 # Detailed Example of a Decision Tree (with Calculations)
@@ -151,36 +132,36 @@ Let \( S \) be the set of all examples (14 in total).
 Number of "Yes": 9  
 Number of "No": 5  
 
-\[
+$$\[
 P(\text{Yes}) = \frac{9}{14}, \quad P(\text{No}) = \frac{5}{14}
-\]
+\]$$
 
-\[
+$$\[
 \text{Entropy}(S) = -P(\text{Yes}) \log_2 P(\text{Yes}) - P(\text{No}) \log_2 P(\text{No})
-\]
+\]$$
 
-\[
+$$\[
 \text{Entropy}(S) = -\frac{9}{14} \log_2 \frac{9}{14} - \frac{5}{14} \log_2 \frac{5}{14}
-\]
+\]$$
 
-\[
+$$\[
 \frac{9}{14} \approx 0.643, \quad \frac{5}{14} \approx 0.357
-\]
+\]$$
 
-\[
+$$\[
 \text{Entropy}(S) = -0.643 \log_2 0.643 - 0.357 \log_2 0.357
-\]
+\]$$
 
-\[
+$$\[
 \log_2 0.643 \approx -0.64, \quad \log_2 0.357 \approx -1.485
-\]
+\]$$
 
-\[
+$$\[
 = -0.643 \times (-0.64) - 0.357 \times (-1.485)
 \]
 \[
 = 0.411 + 0.530 = 0.941
-\]
+\]$$
 
 **Entropy(S) = 0.941**
 
