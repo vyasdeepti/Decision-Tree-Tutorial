@@ -1,4 +1,4 @@
-# Decision-Tree-Tutorial
+
 # Comprehensive Tutorial on Decision Trees
 
 ---
@@ -29,7 +29,6 @@
 
 Decision Trees are one of the most intuitive and widely used algorithms in machine learning and statistics for both classification and regression tasks. This tutorial provides a deep dive into their concepts, construction, mathematics, and implementation.
 
----
 
 ## What is a Decision Tree?
 
@@ -43,20 +42,20 @@ Decision Trees can be used for:
 - **Classification** (categorical outcomes)
 - **Regression** (continuous outcomes)
 
----
+
 
 ## Types of Decision Trees
 
 - **Classification Trees**: Output is a class label. Example: Yes/No, Spam/Not Spam.
 - **Regression Trees**: Output is a continuous value. Example: Predicting house prices.
 
----
+
 
 ## How Does a Decision Tree Work?
 
 The algorithm splits the dataset into subsets based on the value of input features. This process is recursive and continues until all (or most) data points in a subset belong to the same class (or have similar values for regression).
 
----
+
 
 ## Decision Tree Terminology
 
@@ -71,7 +70,7 @@ The algorithm splits the dataset into subsets based on the value of input featur
 ![image](https://github.com/user-attachments/assets/2c3d9aa5-6ffa-4a3b-9f84-85a06be53d43)
 
 
----
+
 
 ## Building a Decision Tree: Step-by-Step
 
@@ -152,7 +151,7 @@ After the tree is built, pruning reduces its size by removing nodes that do not 
 
 Let's consider a simple dataset to predict whether a person will buy a computer (`Yes` or `No`) based on their age and income.
 
-**EXAMPLE 1**
+------**EXAMPLE 1**------
 ## Dataset
 
 | Person | Age      | Income  | Buys Computer |
@@ -466,7 +465,7 @@ Age?
 
 **This example shows how to manually build a decision tree step by step, with all major calculations shown in detail.**
 
-**EXAMPLE 2**
+-----**EXAMPLE 2**-----
 ### Dataset
 
 Consider a simple dataset for predicting whether to play tennis based on weather conditions:
@@ -487,6 +486,17 @@ Consider a simple dataset for predicting whether to play tennis based on weather
 | Overcast| Mild        | High     | True  | Yes        |
 | Overcast| Hot         | Normal   | False | Yes        |
 | Rainy   | Mild        | High     | True  | No         |
+
+Outlook?
+|-- Sunny
+|   |-- Humidity?
+|   |   |-- High: No
+|   |   |-- Normal: Yes
+|-- Overcast: Yes
+|-- Rainy
+    |-- Windy?
+        |-- False: Yes
+        |-- True: No
 
 ### Calculating Entropy and Information Gain
 
