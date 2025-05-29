@@ -462,9 +462,9 @@ Consider a simple dataset for predicting whether to play tennis based on weather
 
 **Entropy (S)** is a measure of impurity in a group of examples.
 
-\[
+$$\[
 Entropy(S) = -p_{+} \log_2(p_{+}) - p_{-} \log_2(p_{-})
-\]
+\]$$
 
 Where \( p_{+} \) is the proportion of positive examples ("Yes") and \( p_{-} \) is the proportion of negative examples ("No").
 
