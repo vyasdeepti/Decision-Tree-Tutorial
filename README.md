@@ -179,24 +179,24 @@ Subset: Person 1, 2, 8, 9, 11 (5 samples)
 
 "Yes": 2 (Person 9, 11), "No": 3
 
-\[
+$$\[
 P(\text{Yes}) = \frac{2}{5}, \quad P(\text{No}) = \frac{3}{5}
-\]
-\[
+\]$$
+$$\[
 \text{Entropy} = -\frac{2}{5}\log_2 \frac{2}{5} - \frac{3}{5}\log_2 \frac{3}{5}
-\]
-\[
+\]$$
+$$\[
 = -0.4 \log_2 0.4 - 0.6 \log_2 0.6
-\]
-\[
+\]$$
+$$\[
 \log_2 0.4 \approx -1.322, \quad \log_2 0.6 \approx -0.737
-\]
-\[
+\]$$
+$$\[
 = -0.4 \times (-1.322) - 0.6 \times (-0.737)
-\]
-\[
+\]$$
+$$\[
 = 0.529 + 0.442 = 0.971
-\]
+\]$$
 
 #### ii. Age = 31...40
 
@@ -204,9 +204,9 @@ Subset: Person 3, 7, 12, 13 (4 samples)
 
 All "Yes": 4
 
-\[
+$$\[
 \text{Entropy} = -1 \log_2 1 - 0 \log_2 0 = 0
-\]
+\]$$
 
 #### iii. Age = >40
 
@@ -214,33 +214,33 @@ Subset: Person 4, 5, 6, 10, 14 (5 samples)
 
 "Yes": 3 (Person 4, 5, 10), "No": 2 (Person 6, 14)
 
-\[
+$$\[
 P(\text{Yes}) = \frac{3}{5}, \quad P(\text{No}) = \frac{2}{5}
-\]
-\[
+\]$$
+$$\[
 \text{Entropy} = -0.6 \log_2 0.6 - 0.4 \log_2 0.4
-\]
-\[
+\]$$
+$$\[
 = 0.442 + 0.529 = 0.971
-\]
+\]$$
 
 ### Weighted Average Entropy for Age
 
-\[
+$$\[
 \text{Weighted Entropy} = \frac{5}{14} \times 0.971 + \frac{4}{14} \times 0 + \frac{5}{14} \times 0.971
-\]
-\[
+\]$$
+$$\[
 = 0.347 + 0 + 0.347 = 0.694
-\]
+\]$$
 
 ### Information Gain for Age
 
-\[
+$$\[
 \text{Gain}(\text{Age}) = \text{Entropy}(S) - \text{Weighted Entropy}
-\]
-\[
+\]$$
+$$\[
 = 0.941 - 0.694 = 0.247
-\]
+\]$$
 
 ---
 
@@ -254,9 +254,9 @@ Subset: Person 1, 2, 3, 13 (4 samples)
 
 "Yes": 2 (3, 13), "No": 2
 
-\[
+$$\[
 \text{Entropy} = -0.5 \log_2 0.5 - 0.5 \log_2 0.5 = 1
-\]
+\]$$
 
 #### ii. Income = Medium
 
@@ -264,21 +264,21 @@ Subset: Person 4, 8, 10, 11, 12, 14 (6 samples)
 
 "Yes": 4 (4, 10, 11, 12), "No": 2 (8, 14)
 
-\[
+$$\[
 \text{Entropy} = -\frac{4}{6} \log_2 \frac{4}{6} - \frac{2}{6} \log_2 \frac{2}{6}
-\]
-\[
+\]$$
+$$\[
 \frac{4}{6} = 0.667, \quad \frac{2}{6} = 0.333
-\]
-\[
+\]$$
+$$\[
 \log_2 0.667 \approx -0.585, \quad \log_2 0.333 \approx -1.585
-\]
-\[
+\]$$
+$$\[
 = -0.667 \times (-0.585) - 0.333 \times (-1.585)
-\]
-\[
+\]$$
+$$\[
 = 0.390 + 0.528 = 0.918
-\]
+\]$$
 
 #### iii. Income = Low
 
@@ -286,18 +286,18 @@ Subset: Person 5, 6, 7, 9 (4 samples)
 
 "Yes": 3 (5, 7, 9), "No": 1 (6)
 
-\[
+$$\[
 \text{Entropy} = -0.75 \log_2 0.75 - 0.25 \log_2 0.25
-\]
-\[
+\]$$
+$$\[
 \log_2 0.75 \approx -0.415, \quad \log_2 0.25 = -2
-\]
-\[
+\]$$
+$$\[
 = -0.75 \times (-0.415) - 0.25 \times (-2)
-\]
-\[
+\]$$
+$$\[
 = 0.311 + 0.5 = 0.811
-\]
+\]$$
 
 ### Weighted Average Entropy for Income
 
