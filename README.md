@@ -96,6 +96,24 @@ After the tree is built, pruning reduces its size by removing nodes that do not 
 
 ---
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Worked Example with Calculations
 
 # Detailed Example of a Decision Tree (with Calculations)
