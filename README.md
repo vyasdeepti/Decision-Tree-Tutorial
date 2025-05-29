@@ -1,4 +1,4 @@
-
+![Visitor Count](https://profile-counter.glitch.me/vyasdeepti/count.svg)
 # Comprehensive Tutorial on Decision Trees
 
 ---
