@@ -79,6 +79,53 @@ At each node, the algorithm selects the feature that best splits the data. The m
 - **Gini Impurity (CART):** Used for classification.
 - **Variance Reduction:** Used for regression.
 
+In decision trees, **entropy** and **information gain** are fundamental concepts used to determine the best way to split the data at each node. They aim to create a tree that effectively classifies or predicts the target variable by reducing uncertainty.
+
+**Entropy in Decision Trees**
+
+Entropy, in the context of decision trees, measures the impurity or randomness of a subset of data. A high entropy value indicates that the subset contains a mix of different classes, making it less predictable. Conversely, a low entropy value signifies that the subset is more homogeneous, with instances primarily belonging to a single class.
+
+Mathematically, for a dataset $S$ with $n$ classes, the entropy $H(S)$ is calculated as:
+
+$$H(S) = - \sum_{i=1}^{n} p_i \log_2(p_i)$$
+
+Where:
+- $p_i$ is the proportion of instances in $S$ that belong to class $i$.
+- The logarithm is base 2, so entropy is measured in bits.
+
+**Intuition of Entropy:**
+
+* **Maximum Entropy (High Impurity):** When the classes in a subset are equally distributed, the entropy is at its maximum (e.g., a 50/50 split in a binary classification problem yields an entropy of 1 bit). This signifies the highest level of uncertainty.
+* **Minimum Entropy (High Purity):** When a subset contains only one class (it's pure), the entropy is zero. There is no uncertainty in predicting the class of an instance in this subset.
+* **Goal of Splitting:** Decision tree algorithms strive to reduce entropy at each split, aiming to create child nodes that are purer than the parent node.
+
+**Information Gain in Decision Trees**
+
+Information gain (IG) quantifies the reduction in entropy achieved after splitting a dataset $S$ on a particular attribute $A$. It essentially measures how much "information" about the target variable is gained by knowing the value of the attribute $A$. The attribute with the highest information gain is preferred for splitting because it leads to the most significant decrease in uncertainty.
+
+The formula for information gain $IG(S, A)$ is:
+
+$$IG(S, A) = H(S) - \sum_{v \in Values(A)} \frac{|S_v|}{|S|} H(S_v)$$
+
+Where:
+- $H(S)$ is the entropy of the original dataset $S$.
+- $A$ is the attribute being considered for the split.
+- $Values(A)$ is the set of all possible values for attribute $A$.
+- $S_v$ is the subset of $S$ where attribute $A$ has the value $v$.
+- $|S_v|$ is the number of instances in $S_v$.
+- $|S|$ is the total number of instances in $S$.
+- $H(S_v)$ is the entropy of the subset $S_v$.
+
+**How Information Gain Guides Splitting:**
+
+1.  **Calculate Initial Entropy:** The entropy of the target variable in the current dataset is calculated.
+2.  **Calculate Entropy for Each Attribute's Splits:** For each attribute, the dataset is hypothetically split based on its distinct values. The entropy of the target variable for each resulting subset is then calculated.
+3.  **Calculate Weighted Average Entropy:** The entropy of each subset is weighted by the proportion of instances it contains relative to the original dataset. These weighted entropies are summed to get the expected entropy after splitting on that attribute.
+4.  **Determine Information Gain:** The information gain for an attribute is the difference between the initial entropy and the weighted average entropy after the split.
+5.  **Select Best Splitting Attribute:** The attribute with the highest information gain is chosen as the splitting criterion for the current node. This process is recursively repeated for each child node until a stopping condition is met (e.g., a node becomes pure or a maximum tree depth is reached).
+
+In summary, entropy measures the impurity of a node, and information gain helps the decision tree algorithm decide which attribute to use for splitting at each step to maximize the reduction in impurity and effectively classify the data.
+
 ### Step 2: Splitting
 
 Divide the dataset into subsets based on the selected attribute's values.
