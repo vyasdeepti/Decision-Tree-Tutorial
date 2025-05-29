@@ -3,7 +3,7 @@
 
 ---
 
-## Table of Contents
+## Table of Contents 📝
 1. [Introduction](#introduction)
 2. [What is a Decision Tree?](#what-is-a-decision-tree)
 3. [Types of Decision Trees](#types-of-decision-trees)
@@ -152,7 +152,7 @@ After the tree is built, pruning reduces its size by removing nodes that do not 
 Let's consider a simple dataset to predict whether a person will buy a computer (`Yes` or `No`) based on their age and income.
 
 ---
-**EXAMPLE 1**
+🔶🔶 **EXAMPLE 1** 🔶🔶
 ## Dataset
 
 | Person | Age      | Income  | Buys Computer |
@@ -467,7 +467,7 @@ Age?
 **This example shows how to manually build a decision tree step by step, with all major calculations shown in detail.**
 ---
 
------**EXAMPLE 2**-----
+🔶🔶 **EXAMPLE 2** 🔶🔶
 ### Dataset
 
 Consider a simple dataset for predicting whether to play tennis based on weather conditions:
@@ -489,6 +489,7 @@ Consider a simple dataset for predicting whether to play tennis based on weather
 | Overcast| Hot         | Normal   | False | Yes        |
 | Rainy   | Mild        | High     | True  | No         |
 
+```
 Outlook?
 |-- Sunny
 |   |-- Humidity?
@@ -499,6 +500,7 @@ Outlook?
     |-- Windy?
         |-- False: Yes
         |-- True: No
+```
 
 ### Calculating Entropy and Information Gain
 
