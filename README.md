@@ -68,7 +68,8 @@ The algorithm splits the dataset into subsets based on the value of input featur
 - **Pruning**: Removing sub-nodes to reduce overfitting.
 
 
-![image](https://github.com/user-attachments/assets/1751b706-c8db-4505-97af-d9b560067043)
+![image](https://github.com/user-attachments/assets/2c3d9aa5-6ffa-4a3b-9f84-85a06be53d43)
+
 
 ---
 
