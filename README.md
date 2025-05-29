@@ -151,7 +151,8 @@ After the tree is built, pruning reduces its size by removing nodes that do not 
 
 Let's consider a simple dataset to predict whether a person will buy a computer (`Yes` or `No`) based on their age and income.
 
-------**EXAMPLE 1**------
+---
+**EXAMPLE 1**
 ## Dataset
 
 | Person | Age      | Income  | Buys Computer |
@@ -173,7 +174,7 @@ Let's consider a simple dataset to predict whether a person will buy a computer 
 
 Let's use the **ID3 algorithm**, which uses **Information Gain** and **Entropy**.
 
----
+
 
 ## Step 1: Calculate the Entropy of the Entire Dataset
 
@@ -215,7 +216,7 @@ $$\[
 
 **Entropy(S) = 0.941**
 
----
+
 
 ## Step 2: Calculate Entropy for Attributes
 
@@ -292,7 +293,7 @@ $$\[
 = 0.941 - 0.694 = 0.247
 \]$$
 
----
+
 
 ### B. Attribute: Income
 
@@ -364,7 +365,7 @@ $$\[
 \text{Gain}(\text{Income}) = 0.941 - 0.911 = 0.03
 \]$$
 
----
+
 
 ## Step 3: Select Attribute with Highest Info Gain
 
@@ -373,7 +374,7 @@ $$\[
 
 **Age** is selected as the root node.
 
----
+
 
 ## Step 4: Build the Tree
 
@@ -421,7 +422,7 @@ $$\[
 
 So, **Income** is the best split for Age = <=30.
 
----
+
 
 ## Step 5: Final Decision Tree
 
@@ -437,7 +438,7 @@ So, **Income** is the best split for Age = <=30.
 - **Age = >40:**  
   - Further splits can be made if desired, but based on the example, this is the essential structure.
 
----
+
 
 ## Visualization
 
@@ -453,7 +454,7 @@ Age?
     |-- (Split further based on data)
 ```
 
----
+
 
 ## Summary
 
@@ -461,9 +462,10 @@ Age?
 - **For each branch**, repeat entropy/information gain calculation to decide splits.
 - **Leaf nodes** are pure or no further splits are possible.
 
----
+
 
 **This example shows how to manually build a decision tree step by step, with all major calculations shown in detail.**
+---
 
 -----**EXAMPLE 2**-----
 ### Dataset
@@ -624,10 +626,12 @@ Decision Trees are a powerful and interpretable machine learning model. Understa
 
 ## References
 
-- Quinlan, J. R. (1986). Induction of decision trees. Machine Learning, 1(1), 81–106.
-- scikit-learn documentation: https://scikit-learn.org/stable/modules/tree.html
-- [Wikipedia: Decision tree learning](https://en.wikipedia.org/wiki/Decision_tree_learning)
-  
+1. Quinlan, J. R. (1986). Induction of decision trees. Machine Learning, 1(1), 81–106. [Link](https://link.springer.com/article/10.1023/A:1022643204877)
+2. Breiman, L., Friedman, J., Stone, C. J., & Olshen, R. A. (1984). Classification and Regression Trees. CRC Press. [Link](https://www.crcpress.com/Classification-and-Regression-Trees/Breiman-Friedman-Stone-Olshen/p/book/9780412048418)
+3. scikit-learn: Decision Trees – Official Documentation. [https://scikit-learn.org/stable/modules/tree.html](https://scikit-learn.org/stable/modules/tree.html)
+4. Mitchell, T. M. (1997). Machine Learning. McGraw-Hill. [Chapter 3: Decision Tree Learning](http://www.cs.cmu.edu/~tom/mlbook.html)
+5. Wikipedia: Decision tree learning. [https://en.wikipedia.org/wiki/Decision_tree_learning](https://en.wikipedia.org/wiki/Decision_tree_learning)
+6. Raschka, S. (2015). Python Machine Learning. Packt Publishing Ltd. [Decision Trees in Python](https://sebastianraschka.com/Articles/2014_decision_tree_review.html)
 
 
 
