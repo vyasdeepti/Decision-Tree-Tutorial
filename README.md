@@ -67,6 +67,9 @@ The algorithm splits the dataset into subsets based on the value of input featur
 - **Splitting**: The process of dividing a node into two or more sub-nodes.
 - **Pruning**: Removing sub-nodes to reduce overfitting.
 
+
+![image](https://github.com/user-attachments/assets/1751b706-c8db-4505-97af-d9b560067043)
+
 ---
 
 ## Building a Decision Tree: Step-by-Step
