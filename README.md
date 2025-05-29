@@ -585,3 +585,27 @@ Decision Trees are a powerful and interpretable machine learning model. Understa
 - Quinlan, J. R. (1986). Induction of decision trees. Machine Learning, 1(1), 81–106.
 - scikit-learn documentation: https://scikit-learn.org/stable/modules/tree.html
 - [Wikipedia: Decision tree learning](https://en.wikipedia.org/wiki/Decision_tree_learning)
+- 
+
+
+
+
+
+
+```
+p 
++
+​
+ = 
+4
+3
+​
+ =0.75, p 
+−
+​
+ = 
+4
+1
+​
+ =0.25
+```
