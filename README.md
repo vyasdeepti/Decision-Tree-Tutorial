@@ -301,18 +301,18 @@ $$\[
 
 ### Weighted Average Entropy for Income
 
-\[
+$$\[
 \text{Weighted Entropy} = \frac{4}{14} \times 1 + \frac{6}{14} \times 0.918 + \frac{4}{14} \times 0.811
-\]
-\[
+\]$$
+$$\[
 = 0.286 + 0.393 + 0.232 = 0.911
-\]
+\]$$
 
 ### Information Gain for Income
 
-\[
+$$\[
 \text{Gain}(\text{Income}) = 0.941 - 0.911 = 0.03
-\]
+\]$$
 
 ---
 
@@ -365,9 +365,9 @@ Total: 0.4
 
 Information Gain:
 
-\[
+$$\[
 \text{Gain} = 0.971 - 0.4 = 0.571
-\]
+\]$$
 
 So, **Income** is the best split for Age = <=30.
 
@@ -447,22 +447,22 @@ $$\[
 Entropy(S) = -p_{+} \log_2(p_{+}) - p_{-} \log_2(p_{-})
 \]$$
 
-Where \( p_{+} \) is the proportion of positive examples ("Yes") and \( p_{-} \) is the proportion of negative examples ("No").
+Where $$\( p_{+} \)$$ is the proportion of positive examples ("Yes") and $$\( p_{-} \)$$ is the proportion of negative examples ("No").
 
 In our dataset:
 
 - "Yes": 9
 - "No": 5
 
-\[
+$$\[
 Entropy(S) = -\frac{9}{14} \log_2\left(\frac{9}{14}\right) - \frac{5}{14} \log_2\left(\frac{5}{14}\right)
-\]
-\[
+\]$$
+$$\[
 = -0.6429 \times (-0.4730) - 0.3571 \times (-1.4854)
-\]
-\[
+\]$$
+$$\[
 = 0.940
-\]
+\]$$
 
 #### Step 2: Calculate Information Gain for "Outlook"
 
@@ -475,29 +475,29 @@ Split by "Outlook":
 Entropy for each subset:
 
 - **Sunny**:
-  \[
+  $$\[
   -\frac{2}{5} \log_2\left(\frac{2}{5}\right) - \frac{3}{5} \log_2\left(\frac{3}{5}\right) = 0.971
-  \]
+  \]$$
 - **Overcast**:
-  \[
+  $$\[
   -\frac{4}{4} \log_2\left(\frac{4}{4}\right) - 0 = 0
-  \]
+  \]$$
 - **Rainy**:
-  \[
+  $$\[
   -\frac{3}{5} \log_2\left(\frac{3}{5}\right) - \frac{2}{5} \log_2\left(\frac{2}{5}\right) = 0.971
-  \]
+  \]$$
 
 Weighted entropy after split on "Outlook":
 
-\[
+$$\[
 Entropy_{Outlook} = \frac{5}{14} \cdot 0.971 + \frac{4}{14} \cdot 0 + \frac{5}{14} \cdot 0.971 = 0.693
-\]
+\]$$
 
 **Information Gain**:
 
-\[
+$$\[
 IG(S, Outlook) = Entropy(S) - Entropy_{Outlook} = 0.940 - 0.693 = 0.247
-\]
+\]$$
 
 Perform similar calculations for other attributes.
 
@@ -566,27 +566,10 @@ Decision Trees are a powerful and interpretable machine learning model. Understa
 - Quinlan, J. R. (1986). Induction of decision trees. Machine Learning, 1(1), 81–106.
 - scikit-learn documentation: https://scikit-learn.org/stable/modules/tree.html
 - [Wikipedia: Decision tree learning](https://en.wikipedia.org/wiki/Decision_tree_learning)
-- 
+  
 
 
 
 
 
 
-```
-p 
-+
-​
- = 
-4
-3
-​
- =0.75, p 
-−
-​
- = 
-4
-1
-​
- =0.25
-```
